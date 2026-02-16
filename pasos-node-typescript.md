@@ -34,7 +34,7 @@ npm install -D ts-node nodemon
   "watch": ["src"],
   "ext": ".ts,.js",
   "ignore": [],
-  "exec": "npx ts-node ./src/app.ts"
+  "exec": "node --loader ts-node/esm ./src/app.ts"
 }
 ```
 6. Crear script para correr en desarrollo en el **package.json**
