@@ -53,5 +53,7 @@ npm install -D rimraf
    "build": "rimraf ./dist && tsc",
    "start": "npm run build && node dist/app.js"
 ```
-
-
+9. en visual estudio si tenemos un error en el archivo tsconfig. en la barra de busqueda buscamos 
+```
+  reload window
+```
