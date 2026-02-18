@@ -16,14 +16,15 @@ npx tsc --init --outDir dist/ --rootDir src
   "watch": ["src"],
   "ext": ".ts,.js",
   "ignore": [],
-  "exec": "npx ts-node ./src/app.ts"
+  "exec": "node --loader ts-node/esm ./src/app.ts"
 }
 ```
 
 4. Crear scripts para dev, build y start
 
 ```
-  "dev": "nodemon",
+  "dev": "node --loader ts-node/esm src/app.ts",  // cuando vamos acrear aplicaciones de consola
+  "dev:nodemon": "nodemon",
   "build": "rimraf ./dist && tsc",
   "start": "npm run build && node dist/app.js"
 ```
