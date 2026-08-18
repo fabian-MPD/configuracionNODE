@@ -26,7 +26,7 @@ pnpm exec tsc --watch
 
 4. Configurar Nodemon y Node-TS
 ```
-pnpm add -D ts-node nodemon
+pnpm add -D tsx
 ```
 5. Crear archivo de configuración de Nodemon - **nodemon.json**
 ```
@@ -56,4 +56,18 @@ pnpm add -D rimraf
 9. en visual estudio si tenemos un error en el archivo tsconfig. en la barra de busqueda buscamos 
 ```
   Developer: Reload Window
+```
+
+10. Crear un archivo en la raiz de proyecto llamado .npmrc
+```
+# Desactiva la ejecución de scripts maliciosos durante la instalación (preinstall/postinstall)
+ignore-scripts=true
+
+# Guarda las dependencias con su versión exacta (sin ^ ni ~)
+save-exact=true
+
+minimum-release-age = 1440
+block-exotic-subdeps = true
+trust-policy = no-downgrade
+# node-options = "--permission"
 ```
