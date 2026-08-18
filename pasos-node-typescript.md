@@ -34,7 +34,7 @@ pnpm add -D tsx
   "watch": ["src"],
   "ext": ".ts,.js",
   "ignore": [],
-  "exec": "node --loader ts-node/esm ./src/app.ts"
+  "exec": "tsx ./src/app.ts"
 }
 ```
 6. Crear script para correr en desarrollo en el **package.json**
