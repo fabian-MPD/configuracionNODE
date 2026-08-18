@@ -15,7 +15,7 @@ pnpm add -D typescript @types/node
 ```
 2. Inicializar el archivo de configuración de TypeScript ( Se puede configurar al gusto)
 ```
-pnpm dlx tsc --init --outDir dist/ --rootDir src
+pnpm exec tsc --init --outDir dist/ --rootDir src
 ```
 
 3. **Opcional** - Para traspilar el código, se puede usar este comando
