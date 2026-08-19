@@ -71,3 +71,27 @@ block-exotic-subdeps = true
 trust-policy = no-downgrade
 # node-options = "--permission"
 ```
+
+
+11. configuracion archivo tsconfig.json se agrega esta configuracion
+```
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "verbatimModuleSyntax": true
+  }
+}
+
+```
+
+12. configuracion archivo package.json  validamos y agregamos 
+```
+{
+  "name": "tu-proyecto",
+  "version": "1.0.0",
+  "type": "module", // se agrega solo esta linea
+  "scripts": { ... }
+}
+
+```
