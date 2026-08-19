@@ -39,8 +39,8 @@ pnpm add -D tsx
 ```
 6. Crear script para correr en desarrollo en el **package.json**
 ```
-  "dev": "nodemon"
-  "dev": "pnpm dlx nodemon" // En caso de no querer instalar nodemon
+  "dev:nodemon": "nodemon",
+  "dev": "tsx ./src/app.ts", // En caso de no querer instalar nodemon
 ```
 
 7. Instalar rimraf (Herramienta que funciona similar al rm -f) eliminar directorio
