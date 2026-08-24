@@ -62,4 +62,10 @@ pnpm exec tsc --init --outDir dist/ --rootDir src
 }
 
 ```
+8. En el archivo tsconfig.json agregamos 
+```
+"exclude": ["node_modules", "dist"],
+"include": ["src"],
+
+```
 
