@@ -1,8 +1,8 @@
 # Node con TypeScript - TS-Node-dev (preferido)
 
 1. inicializar proyecto
-   
-```pnpm init
+```
+pnpm init
 ```
 
 2. Crear un archivo en la raiz de proyecto llamado .npmrc
