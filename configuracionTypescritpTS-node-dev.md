@@ -21,7 +21,7 @@ trust-policy = no-downgrade
 
 3. Instalar TypeScript y demás dependencias
 ```
-pnpm add -D typescript @types/node ts-node-dev rimraf
+pnpm add -D typescript @types/node tsx rimraf
 ```
 4. Inicializar el archivo de configuración de TypeScript ( Se puede configurar al gusto)
 ```
@@ -31,7 +31,7 @@ pnpm exec tsc --init --outDir dist/ --rootDir src
 5. Crear scripts para dev, build y start ([Más sobre TS-Node-dev aquí](https://www.npmjs.com/package/ts-node-dev))
 ```
 "scripts": {
-  "dev": "tsnd --respawn --clear src/app.ts",
+  "dev": "tsx watch src/app.ts",
   "build": "rimraf ./dist && tsc",
   "start": "pnpm run build && node dist/app.js"
 }
